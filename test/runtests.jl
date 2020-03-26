@@ -3,7 +3,7 @@ using Pkg
 using AutomotiveVisualization
 using Colors
 using Random
-using AutomotiveDrivingModels
+using AutomotiveSimulator
 
 @testset "Renderable" begin
     rw = gen_straight_roadway(3, 100.0)

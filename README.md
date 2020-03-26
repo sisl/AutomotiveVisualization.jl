@@ -6,7 +6,7 @@
 
 A package for rendering simple scenes primarily consisting of cars on roadways using Cairo.
 
-AutomotiveVisualization is undergoing significant changes. If you are looking for the version before these changes that is designed around AutomotiveDrivingModels.jl, please checkout the v0.6.0 tag.
+AutomotiveVisualization is undergoing significant changes. If you are looking for the version before these changes that is designed around AutomotiveSimulator.jl, please checkout the v0.6.0 tag.
 
 ![AutomotiveVisualization](readmeimage.png)
 

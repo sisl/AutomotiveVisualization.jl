@@ -2,7 +2,7 @@
 
 `AutomotiveVisualization` is a package for visualizing simple traffic scenarios using Cairo.
 It is primarily designed to provide rendering support for
-[`AutomotiveDrivingModels.jl`](https://github.com/sisl/AutomotiveDrivingModels.jl).
+[`AutomotiveSimulator.jl`](https://github.com/sisl/AutomotiveSimulator.jl).
 The framework currently supports building blocks such as roadways,
 vehicles and pedestrians and can be easily extended.
 

@@ -3,7 +3,7 @@ module AutomotiveVisualization
 using Reexport
 using Parameters
 using StaticArrays
-using AutomotiveDrivingModels
+using AutomotiveSimulator
 using Printf
 using Rsvg
 

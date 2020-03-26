@@ -21,7 +21,7 @@
 #
 # First, we prepare a sequence of scenes visualize
 
-using AutomotiveDrivingModels
+using AutomotiveSimulator
 using AutomotiveVisualization
 AutomotiveVisualization.colortheme["background"] = colorant"white"; # hide
 

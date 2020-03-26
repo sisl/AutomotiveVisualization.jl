@@ -15,7 +15,7 @@
 
 # In this tutorial, we will use the same stadium scenario as shown in the camera example.
 
-using AutomotiveDrivingModels
+using AutomotiveSimulator
 using AutomotiveVisualization
 AutomotiveVisualization.colortheme["background"] = colorant"white"; # hide
 AutomotiveVisualization.set_render_mode(:fancy)
@@ -261,7 +261,7 @@ end
 function AutomotiveVisualization.add_renderable!(rendermodel::RenderModel, overlay::ConcentricRectOverlay)
     veh = get_by_id(overlay.scene, overlay.target_id)
     x, y, yaw = posg(veh)
-    w, l = AutomotiveDrivingModels.width(veh.def), length(veh.def)
+    w, l = AutomotiveSimulator.width(veh.def), length(veh.def)
 
     add_instruction!(
         rendermodel, render_concentric_rects,

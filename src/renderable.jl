@@ -35,7 +35,7 @@ ArrowCar(x::Real, y::Real, angle::Float64=0.0; length = 4.8, width = 1.8,  color
 function ArrowCar(car::E; color=id_to_color(car.id), kwargs...) where {E<:Entity}
     ArrowCar(
         posg(car)...;
-        length=length(car.def), width=AutomotiveDrivingModels.width(car.def),
+        length=length(car.def), width=AutomotiveSimulator.width(car.def),
         color=color, kwargs...
     )
 end
@@ -60,7 +60,7 @@ end
 
 function render_entity_rectangle(ctx::CairoContext, er::EntityRectangle)
     x, y, yaw = posg(er.entity.state)
-    w, h = length(er.entity.def), AutomotiveDrivingModels.width(er.entity.def)
+    w, h = length(er.entity.def), AutomotiveSimulator.width(er.entity.def)
     cr = 0.5 # [m]
     save(ctx); translate(ctx, x, y); rotate(ctx, yaw);
     color_fill = er.color
@@ -102,7 +102,7 @@ end
 
 function add_renderable!(rm::RenderModel, fc::FancyCar)
     x, y, yaw = posg(fc.car.state)
-    l, w = length(fc.car.def), AutomotiveDrivingModels.width(fc.car.def)
+    l, w = length(fc.car.def), AutomotiveSimulator.width(fc.car.def)
     add_instruction!(rm, render_fancy_car, (x, y, yaw, l, w, fc.color))
     return rm
 end
@@ -120,7 +120,7 @@ end
 
 function add_renderable!(rm::RenderModel, fp::FancyPedestrian)
     x, y, yaw = posg(fp.ped.state)
-    l, w = length(fp.ped.def), AutomotiveDrivingModels.width(fp.ped.def)
+    l, w = length(fp.ped.def), AutomotiveSimulator.width(fp.ped.def)
     add_instruction!(rm, render_fancy_pedestrian, (x, y, yaw, l, w, fp.color))
     return rm
 end

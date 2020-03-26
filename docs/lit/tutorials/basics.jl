@@ -37,7 +37,7 @@
 # We start our example by rendering an empty roadway
 
 
-using AutomotiveDrivingModels
+using AutomotiveSimulator
 using AutomotiveVisualization
 
 roadway = gen_straight_roadway(3, 100.0)
