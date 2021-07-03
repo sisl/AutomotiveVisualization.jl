@@ -1,7 +1,7 @@
 # AutomotiveVisualization
 
-[![Build Status](https://travis-ci.org/sisl/AutomotiveVisualization.jl.svg?branch=master)](https://travis-ci.org/sisl/AutomotiveVisualization.jl)
-[![Coverage Status](https://coveralls.io/repos/sisl/AutomotiveVisualization.jl/badge.svg)](https://coveralls.io/r/sisl/AutomotiveVisualization.jl)
+[![Build status](https://github.com/sisl/AutomotiveVisualization.jl/workflows/CI/badge.svg)](https://github.com/sisl/AutomotiveVisualization.jl/actions)
+[![CodeCov](https://codecov.io/gh/sisl/AutomotiveVisualization.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/sisl/AutomotiveVisualization.jl)
 [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://sisl.github.io/AutomotiveVisualization.jl/dev)
 
 A package for rendering simple scenes primarily consisting of cars on roadways using Cairo.
